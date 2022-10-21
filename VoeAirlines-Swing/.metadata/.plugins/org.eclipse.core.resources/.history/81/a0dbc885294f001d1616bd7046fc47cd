@@ -1,0 +1,21 @@
+package br.com.voeairlines.bo;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import br.com.voeairlines.Login;
+import br.com.voeairlines.dao.LoginDAO;
+
+public class LoginBO {
+	
+	Login l = new Login();
+	
+	public LoginBO() {
+		
+	
+	
+	
+}
+	
+}

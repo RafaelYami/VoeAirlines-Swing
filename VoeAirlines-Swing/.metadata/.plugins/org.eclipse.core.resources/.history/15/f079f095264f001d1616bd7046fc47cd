@@ -1,0 +1,17 @@
+package br.com.voeairlines.bo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.voeairlines.dao.LoginDAO;
+
+public class LoginBO {
+	
+	try {
+		Connection con = LoginDAO.faz_conexao();
+	}catch(SQLException e) {
+		e.printStackTrace();
+	}
+	
+	
+}

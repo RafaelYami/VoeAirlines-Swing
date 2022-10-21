@@ -1,0 +1,22 @@
+package br.com.voeairlines.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class LoginDAO {
+	
+	public static Connection faz_conexao() {
+		
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			return DriverManager.getConnection("jdbc:mysql://localhost/db_login", "root", "98486882r");
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+package br.com.voeairlines.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class LoginDAO {
+	
+	public static Connection faz_conexao() throws SQLException {
+		
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			return DriverManager.getConnection("jdbc:mysql://localhost/db_login", "root", "98486882r");
+			
+		} catch (ClassNotFoundException e) {
+			throw new SQLException(e.getException());
+		}
+		
+	}
+	
+}

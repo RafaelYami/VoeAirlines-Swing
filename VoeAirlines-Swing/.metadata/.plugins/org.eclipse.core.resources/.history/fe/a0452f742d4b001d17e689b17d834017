@@ -1,0 +1,53 @@
+package br.com.voeairlines;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class Login extends JFrame implements ActionListener {  
+    
+	public Login() {
+        JFrame f = new JFrame("VoeAirlines - Voando alto com você!");    
+        JLabel label = new JLabel();            
+        JPasswordField value = new JPasswordField();
+        JLabel l1=new JLabel("Usuário:");
+        JLabel l2=new JLabel("Password:");
+        JButton b = new JButton("Login");
+        JTextField text = new JTextField();
+       
+        label.setBounds(20,150, 200,50);  
+        value.setBounds(100,75,100,30);   
+        l1.setBounds(20,20, 80,30);    
+        l2.setBounds(20,75, 80,30);    
+        b.setBounds(100,120, 80,30);    
+        text.setBounds(100,20, 100,30);    
+               
+        f.add(value); 
+        f.add(l1); 
+        f.add(label); 
+        f.add(l2); 
+        f.add(b); 
+        f.add(text);  
+        f.setSize(800,600);    
+        f.setLayout(null);    
+        f.setVisible(true);     
+        
+    
+}
+
+	public void setVisible(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}  
+}  

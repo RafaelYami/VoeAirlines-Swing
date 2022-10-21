@@ -1,0 +1,19 @@
+package br.com.voeairlines;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class Login1 extends JFrame implements ActionListener {
+	
+	public Login1() {
+		
+		JFrame f = new JFrame("VoeAirlines - Voando alto com você!");
+	    JLabel label = new JLabel();
+		
+	}
+	
+	
+	
+	
+}

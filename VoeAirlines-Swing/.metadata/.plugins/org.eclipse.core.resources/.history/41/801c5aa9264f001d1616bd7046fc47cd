@@ -1,0 +1,20 @@
+package br.com.voeairlines.bo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.voeairlines.dao.LoginDAO;
+
+public class LoginBO {
+	
+	try {
+		
+		Connection con = LoginDAO.faz_conexao();
+		
+		String sql = "select * from dados_Login where usuario = ? and senha = ?";
+		
+	}catch(SQLException e) {
+		e.printStackTrace();
+	}
+	
+}

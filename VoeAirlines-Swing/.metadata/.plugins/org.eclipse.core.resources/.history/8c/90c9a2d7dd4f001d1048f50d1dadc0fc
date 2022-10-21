@@ -1,0 +1,5 @@
+package br.com.voeairlines.model;
+
+public class Usuario {
+
+}
